@@ -1,14 +1,14 @@
 .NewColetion {
     position: relative;
     width: 100%;
-    height: 780px;
+    height: 880px;
 
     overflow: hidden;
 
     background: var(--preto);
 
     & img {
-        z-index: -1;
+        z-index: 0;
     }
 
     & h1 {
@@ -16,7 +16,7 @@
         width: 854px;
         height: 200px;
         left: calc(50% - 854px/2);
-        top: 248px;
+        top: 335px;
 
         font-family: var(--font-secundaria);
         font-style: normal;
@@ -43,7 +43,7 @@
         width: 300px;
         height: 46px;
         left: calc(50% - 300px/2);
-        top: 600px;
+        top: 690px;
 
         border: 2px solid var(--branco);
         background: none;

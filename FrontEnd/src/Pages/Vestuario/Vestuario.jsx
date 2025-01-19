@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+
 /* ---- COMPONENTES ---- */
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
@@ -40,6 +42,45 @@ function Vestuario() {
                 <div className={styles.NameDrop}>
                     <h1>Coleção</h1>
                     <h2>WOORLDSSHOCK</h2>
+                </div>
+
+                {/* 
+                <div className={styles.Filters}>
+                    // Seletor de Ordenação *
+                <select>
+                    <option value="">Ordenar por</option>
+                    <option value="price-ascending">Preço: Menor ao Maior</option>
+                    <option value="price-descending">Preço: Maior ao Menor</option>
+                    <option value="name-ascending">Nome: A-Z</option>
+                    <option value="name-descending">Nome: Z-A</option>
+                </select>
+
+                    // Seletor de Filtros (Cor e Tamanho)
+                <select>
+                    <option value="">Filtrar por</option>
+
+                    // Agrupando as cores
+                    <optgroup label="Cores">
+                        <option value="preto">Preto</option>
+                        <option value="off-white">Off-White</option>
+                    </optgroup>
+
+                        // Agrupando os tamanhos
+                    <optgroup label="Tamanhos">
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </optgroup>
+                </select>
+            </div>
+ */}
+
+                <div className={styles.Center}>
+                    <Link to="/" className={styles.PaginaAnterior}>
+                        Início
+                    </Link>
+                    <span className={styles.PaginaAtual}>/Vestuário</span>
                 </div>
 
                 <section className={styles.Camisetas}>
@@ -110,7 +151,7 @@ function Vestuario() {
                         </div>
                     </section>
                 </section>
-            </section>
+            </section >
             <Footer />
         </>
     );
